@@ -1,0 +1,39 @@
+.tabs {
+    display: flex;
+    gap: 8px;
+    margin-top: 10px;
+}
+
+.tabs button {
+    flex: 1;
+    padding: 6px;
+    background: transparent;
+    border: 1px solid #444;
+    color: #888;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.tabs button.active {
+    background: #333;
+    color: #fff;
+    border-color: #666;
+}
+
+.content-area {
+    flex: 1;
+    overflow-y: auto;
+}
+
+@media (prefers-color-scheme: light) {
+    .tabs button {
+        border-color: #ccc;
+        color: #666;
+    }
+
+    .tabs button.active {
+        background: #eee;
+        color: #000;
+        border-color: #999;
+    }
+}
